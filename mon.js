@@ -13,7 +13,7 @@ const leafNodes = whitelistedAddresses.map(addr => keccak256(addr));
 
 const merkleTree = new MerkleTree(leafNodes, keccak256, { sortPairs: true });
 
-const uri = 'mongodb+srv://zura:verse@cluster0.jwqcpmj.mongodb.net/?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://zura:<password>@cluster0.jwqcpmj.mongodb.net/?retryWrites=true&w=majority';
 const dbName = 'Cluster0';
 const collectionName = 'merkleProofs';
 
